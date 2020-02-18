@@ -1,6 +1,6 @@
 <?php
 require_once '../includes/conexion.php';
-define('API_VERSION', 'v1.0');
+define('API_VERSION', 'V1.0');
 $uri = explode(API_VERSION.'/', parse_url($_SERVER['REQUEST_URI'],PHP_URL_PATH))[1];
 $uri_array = explode('/',$uri);
 $recurso = array_shift($uri_array);
